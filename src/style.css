@@ -1,4 +1,13 @@
+:root {
+  --background: #f6e6cb;
+}
+
 body {
   font-family: "Roboto", sans-serif;
-  background: cadetblue;
+  background: var(--background);
+  padding-top: 200px;
+}
+header {
+  padding-left: 100px;
+  padding-bottom: 100px;
 }
