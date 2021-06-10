@@ -1,13 +1,43 @@
 :root {
-  --background: #f6e6cb;
+  --background-color: #f6e6cb;
+  --button-color: #f0ede8;
+  --default-font-family: "Playfair Display", serif;
+  --heading-font-family: "Poppins", sans-serif;
+  --body-font-family: "Roboto", sans-serif;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  background: var(--background);
+  background: var(--background-color);
   padding-top: 200px;
+  padding-bottom: 200px;
 }
 header {
-  padding-left: 100px;
+  padding-left: 60px;
   padding-bottom: 100px;
+  font-family: var(--heading-font-family);
+  font-weight: 900;
+}
+h1 {
+  font-size: 50px;
+}
+h3 {
+  font-size: 24px;
+  margin-left: 2px;
+}
+.btn-branding {
+  background: var(--button-color);
+  border-radius: 6px;
+  color: honeydew;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 12px;
+  padding: 15px 20px;
+}
+.projects {
+  display: flex;
+}
+.projects img {
+  opacity: 0.9;
+  max-width: 100%;
+  height: auto;
 }
