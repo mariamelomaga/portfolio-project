@@ -1,8 +1,10 @@
 :root {
   --background-color: #f6e6cb;
   --button-color: #f0ede8;
+  --default-color: #000;
+  --cursor-color: burlywood;
   --default-font-family: "Playfair Display", serif;
-  --heading-font-family: "Poppins", sans-serif;
+  --heading-font-family: "Inter", sans-serif;
   --body-font-family: "Roboto", sans-serif;
 }
 
@@ -10,6 +12,7 @@ body {
   background: var(--background-color);
   padding-top: 200px;
   padding-bottom: 200px;
+  font-family: var(--body-font-family);
 }
 header {
   padding-left: 60px;
@@ -23,6 +26,14 @@ h1 {
 h3 {
   font-size: 24px;
   margin-left: 2px;
+}
+a {
+  text-decoration: none;
+  color: var(--default-color);
+}
+a:hover {
+  cursor: cell;
+  color: var(--cursor-color);
 }
 .btn-branding {
   background: var(--button-color);
