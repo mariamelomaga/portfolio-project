@@ -4,31 +4,28 @@
   --button-color2: #d8b384;
   --default-color: #000;
   --cursor-color: burlywood;
-  --default-font-family: "Playfair Display", serif;
-  --heading-font-family: "Inter", sans-serif;
+  --heading-font-family: "Abel", sans-serif;
   --body-font-family: "Roboto", sans-serif;
+  --alternative-font-family: "Inter", sans-serif;
 }
 
 body {
   background: var(--background-color);
   padding-top: 200px;
   padding-bottom: 200px;
-  font-family: var(--body-font-family);
+  font-family: var(--alternative-font-family);
   padding-right: 60px;
 }
 header {
   padding-left: 60px;
   padding-bottom: 100px;
-  font-family: var(--heading-font-family);
-  font-weight: 300;
-  text-align: end;
+  text-align: center;
 }
 h1 {
-  font-size: 50px;
+  font-size: 40px;
 }
 h3 {
   font-size: 24px;
-  margin-left: 300px;
 }
 a {
   text-decoration: none;
@@ -38,6 +35,7 @@ a:hover {
   cursor: cell;
   color: var(--cursor-color);
 }
+
 .navbar-light {
   margin-left: 60px;
 }
@@ -45,33 +43,22 @@ a:hover {
   display: flex;
   justify-content: flex-end;
 }
-.bg-ligh {
-  background: var(--button-color);
-}
+
 .btn-branding {
   background: var(--button-color2);
   border-radius: 6px;
   color: var(--button-color);
-  font-weight: 400;
   font-size: 18px;
+  font-weight: 100;
   line-height: 12px;
   padding: 15px 20px;
+  font-family: var(--body-font-family);
 }
 .btn-branding:hover {
   color: var(--cursor-color);
 }
-.projects {
-  display: flex;
-}
-.projects img {
-  opacity: 0.2;
-  max-width: 100%;
-  height: auto;
-}
+
 @media (max-width: 576px) {
-  header {
-    text-align: start;
-  }
   h1 {
     font-size: 28px;
     font-weight: bold;
@@ -80,11 +67,16 @@ a:hover {
     font-size: 20px;
   }
   h3 {
-    font-size: 22px;
+    font-size: 20px;
+  }
+  .row {
+    justify-content: stretch;
   }
   .d-sm-flex {
     display: block;
+    justify-content: stretch;
   }
+
   .btn-branding {
     font-size: 15px;
     padding: 12px 15px;
