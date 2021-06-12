@@ -1,6 +1,7 @@
 :root {
   --background-color: #f6e6cb;
   --button-color: #f0ede8;
+  --button-color2: #d8b384;
   --default-color: #000;
   --cursor-color: burlywood;
   --default-font-family: "Playfair Display", serif;
@@ -13,19 +14,21 @@ body {
   padding-top: 200px;
   padding-bottom: 200px;
   font-family: var(--body-font-family);
+  padding-right: 60px;
 }
 header {
   padding-left: 60px;
   padding-bottom: 100px;
   font-family: var(--heading-font-family);
-  font-weight: 900;
+  font-weight: 300;
+  text-align: end;
 }
 h1 {
   font-size: 50px;
 }
 h3 {
   font-size: 24px;
-  margin-left: 2px;
+  margin-left: 300px;
 }
 a {
   text-decoration: none;
@@ -35,20 +38,55 @@ a:hover {
   cursor: cell;
   color: var(--cursor-color);
 }
-.btn-branding {
+.navbar-light {
+  margin-left: 60px;
+}
+.navigation-links {
+  display: flex;
+  justify-content: flex-end;
+}
+.bg-ligh {
   background: var(--button-color);
+}
+.btn-branding {
+  background: var(--button-color2);
   border-radius: 6px;
-  color: honeydew;
+  color: var(--button-color);
   font-weight: 400;
   font-size: 18px;
   line-height: 12px;
   padding: 15px 20px;
 }
+.btn-branding:hover {
+  color: var(--cursor-color);
+}
 .projects {
   display: flex;
 }
 .projects img {
-  opacity: 0.9;
+  opacity: 0.2;
   max-width: 100%;
   height: auto;
+}
+@media (max-width: 576px) {
+  header {
+    text-align: start;
+  }
+  h1 {
+    font-size: 28px;
+    font-weight: bold;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 22px;
+  }
+  .d-sm-flex {
+    display: block;
+  }
+  .btn-branding {
+    font-size: 15px;
+    padding: 12px 15px;
+  }
 }
