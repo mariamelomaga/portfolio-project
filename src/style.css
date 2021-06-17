@@ -15,7 +15,9 @@ body {
   padding-bottom: 200px;
   font-family: var(--alternative-font-family);
 }
-
+header {
+  background: var(--button-color);
+}
 h1 {
   font-size: 35px;
   text-transform: uppercase;
@@ -24,6 +26,9 @@ h1 {
 h3 {
   font-size: 20px;
   font-weight: 150;
+}
+h2 {
+  font-weight: 100;
 }
 a {
   text-decoration: none;
@@ -37,6 +42,10 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.about-page {
+  background: var(--cursor-color);
+}
 .hero {
   margin: 160px, 20px;
 }
@@ -49,10 +58,12 @@ img {
 }
 
 .btn-branding {
-  background: var(--button-color);
+  background: var(--about-page-color);
   border-radius: 5px;
-  color: var(--default-color);
+  color: var(--button-color);
   font-size: 18px;
+  margin-top: 90px;
+  margin-bottom: 100px;
   line-height: 25px;
   padding: 12px 25px;
   font-family: var(--alternative-font-family);
