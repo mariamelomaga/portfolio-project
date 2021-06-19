@@ -1,10 +1,10 @@
 :root {
   --background-color: #f6e6cb;
   --projects-page-color: #9e9d89;
+  --about-page-color: #d8b384;
+  --contact-page-color: #d0a582;
   --button-color: #f0ede8;
   --button-color-main: #9b480c;
-  --about-page-color: #d8b384;
-  --header-color: #f0e4d7;
   --default-color: #000;
   --cursor-color: #d8b384;
   --heading-font-family: "Abel", sans-serif;
@@ -24,16 +24,20 @@ header {
 }
 h1 {
   font-size: 35px;
-  font-weight: 200;
+  font-weight: 300;
 }
 h3 {
   font-size: 25px;
   font-weight: 150;
 }
-h2,
-p {
+h2 {
   font-weight: 100;
-  font-size: 30px;
+  font-size: 35px;
+}
+p,
+a {
+  font-weight: 100;
+  font-size: 25px;
 }
 
 a {
@@ -60,6 +64,13 @@ img {
 .projects-page {
   background: var(--projects-page-color);
 }
+
+.contact-page {
+  background: var(--contact-page-color);
+}
+.netlify-link {
+  font-weight: 250;
+}
 .navbar-light {
   margin-left: 0px;
 }
@@ -76,7 +87,7 @@ img {
   margin-top: 30px;
   margin-bottom: 50px;
   line-height: 25px;
-  padding: 12px 25px;
+  padding: 15px 35px;
   font-family: var(--alternative-font-family);
 }
 .btn-branding:hover {
