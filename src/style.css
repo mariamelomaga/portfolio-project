@@ -53,7 +53,31 @@ img {
   max-width: 100%;
   height: auto;
 }
+footer {
+  margin: 90px 0;
+}
+footer .social-links a {
+  margin: 0 20px;
+  color: var(--button-main-color);
+  padding: 10px;
+  font-size: 25px;
+  border-radius: 50%;
+  transition: all 150ms ease;
+}
+footer .social-links a:hover {
+  color: var (var(--projects-page-color));
+  background: var (var(--button-color));
+}
+footer .contact-box {
+  background: var(--cursor-color);
+  padding: 20px 200px;
+  border-radius: 5px;
+  margin: 130px;
+}
 
+footer .contact-box p {
+  margin: 0;
+}
 .mt-5 {
   padding-top: 60px;
   text-align: center;
