@@ -27,7 +27,7 @@ h1 {
   font-weight: 300;
 }
 h3 {
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 150;
 }
 
@@ -109,7 +109,6 @@ footer .btn-branding {
   display: flex;
   justify-content: flex-end;
 }
-
 .btn-branding {
   background: var(--button-color-main);
   color: var(--button-color);
@@ -127,8 +126,8 @@ footer .btn-branding {
   padding-top: 50px;
   text-align: start;
 }
-.row-about-page {
-  margin-top: -30px;
+.about-text {
+  text-align: justify;
 }
 .footer-note {
   font-size: 15px;
