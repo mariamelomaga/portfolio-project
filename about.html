@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Maria Melo Portfolio - frontend developer_about_page"
+      content="This is the about page of Maria Melo's portfolio"
     />
-    <title>about-page_portfolio - Maria Melo</title>
+    <title>Front-end developer - Maria Melo about page</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -20,88 +20,149 @@
       integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://kit.fontawesome.com/ddc3ee268a.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="/src/style.css" />
   </head>
   <body class="about-page">
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">MM</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse navigation-links" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="/index.html"
-                >.home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="/about.html" title="about-page"
-                >.about</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/projects.html" title="project-page"
-                >.projects</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="/contact.html"
-                title="contact-page"
-                tabindex="-1"
-                aria-disabled="true"
-                >.contact</a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <div class="about-section container">
-      <div class="row">
-        <div class="col-sm-6">
-          <h1>hello there</h1>
-          <h3><em>thank you for your curiosity</em></h3>
-          <h3 class="mt-5 text-start">
-            I’m a Portuguese frontend developer with a pharmaceutical
-            background......yes you're read it right!
-          </h3>
-          <h3 class="mt-4 text-start">
-            I have always been a curious detailed-mind person with an aesthetic
-            sensibility
-            <span class="text-muted"
-              >{and a bit of an obsession for low-light!}.</span
-            >
-          </h3>
-          <h3 class="mt-4 text-start justify-content">
-            Coding came in after thorough research on how I could gain digital
-            skills plus the creation of layouts\contents. Found a pro-woman
-            school ~
-            <a href="https://www.shecodes.io/" class="shecodes-link"
-              >SheCodes</a
-            >
-            ~ which made the learning process fun, structured and achievable.
-          </h3>
-          <br />
-          <br />
-          <a href="/projects.html" class="btn btn-branding button-about-page"
-            >.projects</a
+    <div class="container">
+      <nav
+        class="navbar navbar-expand-lg navbar-light fixed-top navbar-light"
+        style="background: #9b480c"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">MM</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
           >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse navigation-links" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="/index.html"
+                  title="homepage"
+                  style="font-weight: 200"
+                  >.home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  href="/about.html"
+                  title="about-page"
+                  style="font-weight: 200"
+                  >.about</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="/projects.html"
+                  title="project-page"
+                  style="font-weight: 200"
+                  >.projects</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="/contact.html"
+                  title="contact-page"
+                  style="font-weight: 200"
+                  tabindex="-1"
+                  aria-disabled="true"
+                  >.contact</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="col-sm-6">
-          <img src="images/mycorner.JPG" class="img-fluid" alt="home" />
+      </nav>
+      <div class="about-section container">
+        <div class="row">
+          <div class="col-sm-6">
+            <h1>hello there</h1>
+            <h3><strong>~thank you for your curiosity~</strong></h3>
+            <h3 class="mt-4 justify-content">
+              I’m a Portuguese frontend developer with a pharmaceutical
+              background......yes you're read it right!
+            </h3>
+            <h3 class="mt-4 justify-content">
+              I have always been a curious detailed-mind person with an
+              aesthetic sensibility
+              <span class="text-muted"
+                >{and a bit of an obsession for low-light!}.</span
+              >
+            </h3>
+            <h3 class="mt-4 justify-content">
+              Coding came in after thorough research on how I could gain digital
+              skills plus the creation of layouts\contents. Found a pro-woman
+              school ~
+              <a href="https://www.shecodes.io/" class="shecodes-link"
+                >SheCodes</a
+              >
+              ~ which made the learning process fun, structured and achievable.
+            </h3>
+
+            <a href="/projects.html" class="btn btn-branding">.projects</a>
+          </div>
+          <div class="col-sm-6">
+            <img src="images/mycorner.JPG" class="img-fluid" alt="home" />
+          </div>
         </div>
+        <footer>
+          <div class="contact-box justify-content-evenly mb-5 d-none d-md-flex">
+            <div>
+              <h3><strong>work inquiry</strong></h3>
+              <p>let's work together</p>
+            </div>
+            <div>
+              <a
+                href="mailto:maria.melo.maga@gmail.com"
+                class="btn btn-branding mt-3"
+                title="contact-Maria"
+              >
+                .contact me
+              </a>
+            </div>
+          </div>
+          <div class="social-links d-flex justify-content-center">
+            <a
+              href="https://github.com/mariamelomaga
+      "
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/mariambmmagalhaes/">
+              <i class="fab fa-linkedin-in"></i
+            ></a>
+            <a href="mailto:maria.melo.maga@gmail.com">
+              <i class="fas fa-envelope"></i
+            ></a>
+          </div>
+          <p class="text-center footer-note">
+            this page was coded by Maria Melo, and it is
+            <a
+              href="https://github.com/mariamelomaga"
+              target="_blank"
+              style="font-weight: 500"
+            >
+              open-sourced</a
+            >
+          </p>
+        </footer>
       </div>
     </div>
   </body>

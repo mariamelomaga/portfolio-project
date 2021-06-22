@@ -1,6 +1,6 @@
 :root {
   --background-color: #f6e6cb;
-  --projects-page-color: #9e9d89;
+  --projects-page-color: #282d2c;
   --about-page-color: #d8b384;
   --contact-page-color: #d0a582;
   --button-color: #f0ede8;
@@ -30,14 +30,19 @@ h3 {
   font-size: 25px;
   font-weight: 150;
 }
+
 h2 {
   font-weight: 100;
   font-size: 35px;
 }
+h4 {
+  font-size: 25px;
+  font-weight: 300;
+}
 p,
 a {
   font-weight: 100;
-  font-size: 25px;
+  font-size: 22px;
 }
 
 a {
@@ -46,7 +51,7 @@ a {
 }
 a:hover {
   cursor: cell;
-  color: var(--cursor-color);
+  color: var(--button-color-main);
 }
 
 img {
@@ -58,26 +63,27 @@ footer {
 }
 footer .social-links a {
   margin: 0 20px;
-  color: var(--button-main-color);
   padding: 10px;
   font-size: 25px;
   border-radius: 50%;
   transition: all 150ms ease;
 }
-footer .social-links a:hover {
-  color: var (var(--projects-page-color));
-  background: var (var(--button-color));
-}
+
 footer .contact-box {
-  background: var(--cursor-color);
-  padding: 20px 200px;
   border-radius: 5px;
-  margin: 130px;
+  margin: 20px;
 }
 
 footer .contact-box p {
   margin: 0;
+  font-size: 18px;
 }
+footer .btn-branding {
+  font-size: 18px;
+  line-height: 15px;
+  padding: 12px 15px;
+}
+
 .mt-5 {
   padding-top: 60px;
   text-align: center;
@@ -86,7 +92,7 @@ footer .contact-box p {
   background: var(--cursor-color);
 }
 .projects-page {
-  background: var(--projects-page-color);
+  background: var(--contact-page-color);
 }
 
 .contact-page {
@@ -97,6 +103,7 @@ footer .contact-box p {
 }
 .navbar-light {
   margin-left: 0px;
+  font-weight: bolder;
 }
 .navigation-links {
   display: flex;
@@ -105,24 +112,29 @@ footer .contact-box p {
 
 .btn-branding {
   background: var(--button-color-main);
-
   color: var(--button-color);
   font-size: 18px;
   margin-top: 30px;
   margin-bottom: 50px;
   line-height: 25px;
-  padding: 15px 35px;
+  padding: 12px 15px;
   font-family: var(--alternative-font-family);
 }
 .btn-branding:hover {
   color: var(--cursor-color);
 }
-.row--homepage-about {
+.row-homepage-about {
   padding-top: 50px;
   text-align: start;
 }
 .row-about-page {
   margin-top: -30px;
+}
+.footer-note {
+  font-size: 15px;
+}
+.footer-note a {
+  font-size: 15px;
 }
 @media (max-width: 576px) {
   h1 {
@@ -132,9 +144,13 @@ footer .contact-box p {
     font-size: 20px;
   }
   h3 {
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 200;
   }
+  a {
+    font-size: 16px;
+  }
+
   .projects {
     margin-top: 2px !important;
   }
