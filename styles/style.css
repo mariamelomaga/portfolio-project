@@ -1,0 +1,328 @@
+@font-face {
+  font-family: "Swomp";
+  src: url("../fonts/swomp-gapy2.ttf");
+  font-weight: 70;
+}
+
+:root {
+  --background-color: #f6e6cb;
+  --projects-page-color: #282d2c;
+  --index-page-color: #d8b384;
+  --about-page-color: #d8b384;
+  --contact-page-color: #d0a582;
+  --button-color: #f0ede8;
+  --button-color-main: #9b480c;
+  --default-color: #000;
+  --cursor-color: #d8b384;
+  --heading-font-family: "Abel", sans-serif;
+  --body-font-family: "Roboto", sans-serif;
+  --alternative-font-family: "Inter", sans-serif;
+  --project-aspect: 4/3;
+}
+
+body {
+  background: linear-gradient(180deg, var(--accent-1) 0%, var(--accent-2) 100%);
+  padding-top: 80px;
+  padding-bottom: 80px;
+  font-family: var(--alternative-font-family);
+  background-color: #f6e6cb;
+}
+header {
+  padding: 40px;
+  text-align: center;
+  .hero-text {
+    text-align: left;
+    margin-bottom: 40px;
+  }
+  .logo {
+    font-family: "Swomp", sans-serif;
+    font-size: 28px;
+    color: white;
+  }
+  .intro {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+  }
+
+  .location {
+    font-size: 14px;
+    opacity: 0.6;
+  }
+  .hero-visual {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-image {
+    width: 55%; /* keep your current size */
+    border-radius: 6px;
+    z-index: 1;
+  }
+
+  .collage {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    pointer-events: none;
+  }
+
+  .collage-item {
+    position: absolute;
+    width: 100px;
+    border-radius: 6px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    animation: float 8s ease-in-out infinite;
+  }
+
+  /* positions for layout B (around image) */
+
+  .item1 {
+    left: 30%;
+    top: 50px;
+  }
+  .item2 {
+    right: 30%;
+    top: 50px;
+  }
+  .item3 {
+    left: 35%;
+    bottom: 30px;
+  }
+  .item4 {
+    right: 29%;
+    bottom: 40px;
+  }
+
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  /* ensure CTA button still visible above */
+  .btn-branding {
+    z-index: 30;
+    position: relative;
+  }
+
+  /* responsive: reduce huge h1 for small screens */
+  @media (max-width: 992px) {
+    .site-title {
+      font-size: 64px;
+      line-height: 72px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .site-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .header-center {
+      width: 100%;
+    }
+    .site-title {
+      font-size: 36px;
+      line-height: 42px;
+      text-align: left;
+    }
+    .collage-item {
+      width: 180px;
+    }
+  }
+}
+h1 {
+  font-family: "Inter";
+  font-size: 72px;
+  color: #9b480c;
+}
+h3 {
+  font-family: "Inter";
+  font-size: 82px;
+  font-weight: 100;
+}
+
+h2 {
+  font-weight: 100;
+  font-size: 45px;
+}
+h4 {
+  font-size: 25px;
+  font-weight: 300;
+}
+p,
+a {
+  font-weight: 100;
+  font-size: 22px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--default-color);
+}
+a:hover {
+  cursor: cell;
+  color: var(--button-color-main);
+}
+.headline {
+  font-family: "Swomp", sans-serif;
+  font-size: 28px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.project-image,
+.match-plant {
+  display: block;
+  width: 100%;
+  aspect-ratio: var(--project-aspect);
+  object-fit: cover;
+  border-radius: 6px;
+  max-width: 600px;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) rotate(-1deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(2deg);
+  }
+  100% {
+    transform: translateY(0) rotate(-1deg);
+  }
+}
+
+/* ensure button stays above floating items */
+.btn-branding {
+  z-index: 20;
+  position: relative;
+}
+
+footer {
+  margin-top: 40px;
+}
+
+footer .social-links a {
+  margin: 0 20px;
+  padding: 10px;
+  font-size: 25px;
+  border-radius: 50%;
+  transition: all 150ms ease;
+}
+
+footer .contact-box {
+  text-align: center;
+  margin: 60px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+footer .btn-branding {
+  font-size: 18px;
+  line-height: 15px;
+  padding: 12px 15px;
+}
+
+.mt-5 {
+  padding-top: 60px;
+  text-align: center;
+}
+.about-page {
+  background: var(--cursor-color);
+}
+.projects-page {
+  background: var(--contact-page-color);
+}
+
+.contact-page {
+  background: var(--contact-page-color);
+}
+.netlify-link {
+  font-weight: 250;
+}
+.navbar-light {
+  margin-left: 0px;
+  font-weight: bolder;
+}
+.navigation-links {
+  display: flex;
+  justify-content: flex-end;
+}
+.btn-branding {
+  background: var(--button-color-main);
+  color: var(--button-color);
+  font-size: 18px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  line-height: 25px;
+  padding: 12px 15px;
+  font-family: var(--alternative-font-family);
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0 6px 14px rgba(155, 72, 12, 0.18);
+  z-index: 20;
+  position: relative;
+}
+.btn-branding:hover {
+  color: var(--cursor-color);
+  transform: translateY(-2px);
+}
+.row-homepage-about {
+  padding-top: 50px;
+  text-align: start;
+}
+.about-text {
+  text-align: justify;
+}
+.section-title {
+  font-family: "Swomp", sans-serif;
+  color: #9b480c;
+  font-size: 58px;
+}
+.footer-note {
+  font-size: 15px;
+}
+.footer-note a {
+  font-size: 15px;
+}
+@media (max-width: 576px) {
+  h1 {
+    font-size: 15px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  h3 {
+    font-size: 16px;
+    font-weight: 200;
+  }
+  a {
+    font-size: 16px;
+  }
+
+  .projects {
+    margin-top: 2px !important;
+  }
+  .btn-branding {
+    font-size: 15px;
+    padding: 10px 15px;
+    font-weight: 200;
+  }
+  .navbar-light {
+    margin-left: 0;
+  }
+}
