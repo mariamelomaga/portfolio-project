@@ -461,13 +461,17 @@ footer .contact-box h3 {
 }
 
 .contact-content a {
-  font-size: 18px;
-  display: inline-block;
-  margin-bottom: 10px;
-  color: var(--accent) !important;
-  border-bottom: 1px solid var(--accent);
+  text-decoration: none;
+  color: var(--text) !important;
+  border-bottom: 1px solid transparent;
+  transition: 0.3s;
+  font-size: 16px;
+  opacity: 0.6;
 }
 
+.contact-content a:hover {
+  border-bottom: 1px solid var(--accent);
+}
 .contact-title {
   font-size: 36px;
   color: #9b480c;
@@ -485,7 +489,7 @@ footer .contact-box h3 {
 }
 
 .contact-box p {
-  margin-bottom: 18px;
+  margin-bottom: 6px;
 }
 .contact-link {
   display: inline-block;
