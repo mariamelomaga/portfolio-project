@@ -9,7 +9,7 @@
       content="This is the project page that showcases projects built with technologies
       learnt from Shecodes courses and is part of Maria Melo's Portfolio"
     />
-    <title>Front-end developer - Maria Melo projects page</title>
+    <title>Front-end developer portfolio - Maria Melo projects page</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -31,7 +31,6 @@
     <div class="container">
       <nav
         class="navbar navbar-expand-lg navbar-light fixed-top navbar-light"
-        style="background: #9b480c"
       >
         <div class="container-fluid">
           <a class="navbar-brand" href="/">MM</a>
@@ -46,8 +45,8 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse navigation-links" id="navbarNav">
-            <ul class="navbar-nav">
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
               <li class="nav-item">
                 <a
                   class="nav-link"
@@ -90,62 +89,75 @@
           </div>
         </div>
       </nav>
-      <h1 class="section-title">Projects</h1>
-      <div class="container">
-        <div class="row d-sm-flex d-sm-gx-0">
-          <div class="col-sm-6">
-            <img src="/images/plant-me.jpg" alt="plant_Me" class="img-fluid" />
-            <h4 class="text-center mt-4">Plant Me landing page</h4>
-            <p class="text-center">
-              built with HTML | CSS <br />
-              <a
-                href="https://www.shecodes.io/workshops/shecodes-online-workshop-56-0/projects/275392"
-                target="blank"
-                class="netlify-link"
-                style="font-size: 16px"
-                >.launch landing page
-              </a>
-            </p>
-          </div>
-          <div class="col-sm-6">
-            <img
-              src="/images/weather-app.jpg"
-              alt="weather-app"
-              class="img-fluid"
-            />
-            <h4 class="text-center mt-4">JS Vanilla weather app</h4>
-            <p class="text-center">
-              built with HTML | CSS | JavaScript | API <br />
-              <a
-                href="https://priceless-colden-c88d72.netlify.app/"
-                target="blank"
-                class="netlify-link"
-                style="font-size: 16px"
-                >.launch app</a
-              >
-            </p>
-          </div>
-          <div class="container">
-        <div class="row d-sm-flex d-sm-gx-0">
-          <div class="col-sm-6">
-            <img src="/images/dictionary-engine-app.jpg" alt="dictionary" class="project-image"/>
-            <h4 class="text-center mt-4">React Dictionary Search Engine project</h4>
-            <p class="text-center">
-              built with HTML | CSS | JavaScript | React.js | API  <br />
-              <a
-                href="https://priceless-tesla-8f038b.netlify.app/"
-                target="blank"
-                class="netlify-link"
-                style="font-size: 16px"
-                >.launch landing page
-              </a>
-            </p>
-          </div>
+<div class="container projects-section">
+  <h1 class="section-title text-center">Projects</h1>
+  <div class="row justify-content-center g-5">
+  <div class="col-lg-8 col-md-10">
+      <div class="project-card">
+                <img src="/images/plant-me.png" alt="plant_me" class="project-image" />
+      <div class="project-info">
+        <h3 class="project-title">Plant Me</h3>
+        <p class="project-tech">
+            HTML · CSS · JavaScript (Beginner)
+          </p>
+          <p class="project-description">
+            My first landing page built after 3 weeks of learning HTML and CSS. 
+            Focused on layout, styling, and simple JavaScript interactions.
+          </p>
+        <a href="https://mariamelo-plant-me-landing.netlify.app/"
+           target="_blank"
+           class="project-button">
+           explore project
+        </a>
+      </div>
+    </div>
+
+      <div class="col-lg-8 col-md-10">
+      <div class="project-card">
+        <img src="/images/weather-app.png" alt="weather-app" class="project-image" />
+      <div class="project-info">
+        <h3 class="project-title">Weather App</h3>
+        <p class="project-tech">
+          JavaScript · API · HTML · CSS
+        </p>
+        <p class="project-description">
+          A dynamic weather application using real-time API data. 
+          Built with vanilla JavaScript, focusing on data handling and user interaction.
+        </p>
+        <a href="https://mariamelo-weather-app.netlify.app/"
+           target="_blank"
+           class="project-button">
+            explore project
+        </a>
+      </div>
+      </div>
+    </div>
+    <div class="col-lg-8 col-md-10">
+      <div class="project-card">
+        <img src="/images/dictionary-app.png" alt="dictionary" class="project-image" />
+        <div class="project-info">
+        <h3 class="project-title">Dictionary App</h3>
+        <p class="project-tech">
+          React · API · JavaScript
+        </p>
+        <p class="project-description">
+          A React-based dictionary app that fetches definitions and synonyms from an API. 
+          Focused on component structure and modern frontend practices.
+        </p>
+        <a href="https://mariamelo-dictionary-engine-app.netlify.app/"
+           target="_blank"
+           class=" project-button">
+           explore project
+        </a>
         </div>
-        <footer>
-          <div class="contact-box justify-content-evenly mb-5 d-none d-md-flex">
+      </div>
+    </div>
+  </div>
+</div>
+      <footer>
+          <div class="contact-box text-center">
             <div>
-              <h3 class="mt-4">let's work together</h3>
+              <h3>let's work together</h3>
             </div>
             <div>
               <a
@@ -159,18 +171,24 @@
           </div>
           <div class="social-links d-flex justify-content-center">
             <a
-              href="https://github.com/mariamelomaga
-      "
+              href="https://github.com/mariamelomaga"
             >
               <i class="fab fa-github"></i>
             </a>
-            <a href="https://www.linkedin.com/in/mariambmmagalhaes/">
+            <a href="https://www.linkedin.com/in/mariambmmagalhaes/" target="_blank">
               <i class="fab fa-linkedin-in"></i
             ></a>
             <a href="mailto:maria.melo.maga@gmail.com">
               <i class="fas fa-envelope"></i
             ></a>
-          </div>
+              <a
+            href="https://pt.pinterest.com/marymelo13/_collages/"
+            title="Pinterest collage"
+            target="_blank"
+          >
+            <i class="fab fa-pinterest"></i>
+          </a>
+        </div>
           <p class="text-center footer-note">
             this page was coded by Maria Melo and it is
             <a
@@ -182,7 +200,5 @@
             >
           </p>
         </footer>
-      </div>
-    </div>
   </body>
 </html>

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -28,10 +28,7 @@
   </head>
   <body class="about-page">
     <div class="container">
-      <nav
-        class="navbar navbar-expand-lg navbar-light fixed-top navbar-light"
-        style="background: #9b480c"
-      >
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="/">MM</a>
           <button
@@ -45,8 +42,8 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse navigation-links" id="navbarNav">
-            <ul class="navbar-nav">
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
               <li class="nav-item">
                 <a
                   class="nav-link"
@@ -91,65 +88,73 @@
         </div>
       </nav>
       <div class="about-section container">
-        <div class="row">
-          <div class="col-sm-6 about-text">
+        <div class="row align-items-center">
+          <div class="col-md-6">
             <h1 class="section-title">hello there</h1>
-            <h4>~thank you for your curiosity~</h4>
             <p class="about-intro">
-              This portfolio documents my journey learning frontend development.
+              frontend developer portfolio & visual explorer
             </p>
 
-            <p>
-              I enjoy translating ideas into simple digital experiences and
-              experimenting with layout, typography and visual storytelling.
-            </p>
-            <h4 class="mt-4">
-              With a background in sciences, I always imagined pursuing
-              something more creative. Driven by this inner curiosity, I took on
-              the challenge of learning coding and web development a few years
-              ago through various projects. Now, exploring UX design, I’m
-              revisiting and expanding this portfolio to blend my technical
-              skills with a user-centered, creative approach.
-            </h4>
-            <h4 class="mt-4">
-              I have always been a curious detailed-mind person with an
-              aesthetic sensibility
-              <span class="text-muted"
-                >{and a bit of an obsession for low-light!}.</span
-              >
-            </h4>
-            <h4 class="mt-4">
-              Coding came in after thorough research on how I could gain digital
-              skills plus the creation of layouts\contents. Found a pro-woman
-              school ~
-              <a
-                href="https://www.shecodes.io/"
-                class="shecodes-link text-muted"
-                title="shecodes-link"
-                style="font-size: 19px"
-                >SheCodes</a
-              >
-              ~ which made the learning process fun, structured and achievable.
-            </h4>
+            <div class="about-block">
+              <p>creative curiosity</p>
+              <p>scientific background</p>
+              <p>frontend learning journey</p>
+              <p>design-driven thinking</p>
+            </div>
 
-            <a href="/projects.html" class="btn-about" title="launch-projects"
+            <div class="about-block">
+              <h3>How I got here</h3>
+              <p>
+                Coming from a scientific background, I've always drawn to the
+                creative world. That curiosity led me into coding and web
+                development— where logic meets design. 
+              </br>
+                Today, I approach
+                projects with both structure and sensitivity: balancing
+                problem-solving with visual storytelling.
+              </p>
+              <div class="about-block">
+                I’m especially drawn to details, interior spaces and low-light
+                atmospheres — where mood and design quietly come together.
+              </div>
+            </div>
+            <a href="/projects.html" class="btn-main" title="launch-projects"
               >.projects</a
             >
           </div>
-          <div class="col-sm-6">
-            <img src="images/mycorner.JPG" class="img-fluid" alt="home" />
+
+          <div class="col-md-6 text-center">
+            <img
+              src="images/shadow-me.jpeg"
+              class="about-image"
+              alt="me-shadow"
+            />
+            <img src="images/mycorner.JPG" class="about-image" alt="home" />
           </div>
         </div>
-        <div class="about-gallery">
-          <img src="images/plant-me-moodboard_.jpeg" />
-          <img src="images/green-circle_.jpeg" />
-          <img src="images/green-mood_.jpeg" />
-          <img src="images/lighting-affair_.jpeg" />
+
+        <div class="about-gallery-left">
+          <img
+            src="images/plant-me-moodboard_.jpeg"
+            class="about-gallery-image"
+          />
+          <img src="images/green-circle_.jpeg" class="about-gallery-image" />
+          <img src="images/green-mood_.jpeg" class="about-gallery-image" />
+          <img src="images/lighting-affair_.jpeg" class="about-gallery-image" />
+        </div>
+        <div class="about-gallery-right">
+          <img
+            src="images/plant-me-moodboard_.jpeg"
+            class="about-gallery-image"
+          />
+          <img src="images/green-circle_.jpeg" class="about-gallery-image" />
+          <img src="images/green-mood_.jpeg" class="about-gallery-image" />
+          <img src="images/lighting-affair_.jpeg" class="about-gallery-image" />
         </div>
         <footer>
-          <div class="contact-box justify-content-evenly mb-5 d-none d-md-flex">
+          <div class="contact-box text-center">
             <div>
-              <h3 class="mt-4">let's work together</h3>
+              <h3>let's work together</h3>
             </div>
             <div>
               <a
@@ -178,6 +183,13 @@
             <a href="mailto:maria.melo.maga@gmail.com" title="email-Maria">
               <i class="fas fa-envelope"></i
             ></a>
+            <a
+              href="https://pt.pinterest.com/marymelo13/_collages/"
+              title="Pinterest collage"
+              target="_blank"
+            >
+              <i class="fab fa-pinterest"></i>
+            </a>
           </div>
           <p class="text-center footer-note">
             this page was coded by Maria Melo and it is
