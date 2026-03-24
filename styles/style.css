@@ -6,10 +6,12 @@ html,
 body {
   overflow-x: hidden;
 }
-.container,
-.row {
-  max-width: 100%;
+.container {
   overflow-x: hidden;
+}
+.hero .row {
+  display: flex;
+  align-items: center;
 }
 section {
   margin-bottom: 100px;
@@ -124,39 +126,39 @@ a:hover {
 }
 /* Hero-homepage section */
 .hero-name {
-  font-size: 62px;
+  font-size: 64px;
   font-family: "Swomp";
   color: var(--accent);
-  margin-bottom: 0px;
+  margin-bottom: 10px;
+  line-height: 1;
 }
 .hero-headline {
-  font-size: 20px;
+  font-size: 18px;
   color: #9b480c;
   letter-spacing: 1.5px;
-  line-height: 0.8;
+  line-height: 1;
   font-weight: light;
   max-width: 400px;
   font-weight: 400;
+  opacity: 0.8;
 }
 .hero {
   display: grid;
-  flex-direction: column;
   gap: 40px;
-  margin-top: 60px;
+  margin-top: 80px;
 }
 .hero-location {
-  font-size: 15px;
+  font-size: 14px;
   opacity: 0.6;
-  margin-top: 0;
-  letter-spacing: 1px;
+  margin-bottom: 10px;
 }
 .hero-text {
-  max-width: 480px;
+  max-width: 450px;
 }
 .hero-description {
   margin: 20px 0;
   max-width: 400px;
-  font-size: 18px;
+  font-size: 16px;
   opacity: 0.7;
 }
 .hero-image {
@@ -164,29 +166,21 @@ a:hover {
   height: 300px;
   object-fit: cover;
   border-radius: 8px;
+  position: relative;
+  z-index: 1;
 }
 .hero-visual {
+  display: flex;
+  justify-content: center;
   position: relative;
-}
-.btn-main {
-  background: var(--accent);
-  color: white;
-  padding: 10px 18px;
-  border-radius: 4px;
-  display: inline-block;
-}
-
-.btn-main:hover {
-  background: transparent;
-  color: var(--accent);
-  border: 1px solid var(--accent);
+  overflow: visible;
 }
 
 .homepage-links {
-  margin-top: 30px;
+  margin-top: 15px;
   margin-bottom: 8px;
   display: flex;
-  gap: 30px;
+  gap: 20px;
   font-weight: 500;
   opacity: 0.8;
 }
@@ -208,16 +202,17 @@ a:hover {
 
 .collage {
   position: absolute;
-  bottom: -50px;
+  bottom: -30px;
   right: 0;
   display: flex;
-  gap: 15px;
+  gap: 10px;
+  z-index: 2;
 }
 
 .collage img {
-  width: 100px;
-  border-radius: 8px;
-  height: 140px;
+  width: 80px;
+  border-radius: 6px;
+  height: 100px;
   object-fit: cover;
 }
 .collage-item:hover {
@@ -249,6 +244,15 @@ a:hover {
   position: relative;
   z-index: 2;
 }
+.about-section .btn-branding {
+  display: inline-block;
+  margin-bottom: 20px;
+  max-width: 460px;
+}
+.about-section .btn-branding {
+  display: inline-block;
+  margin-top: 10px;
+}
 .about-text {
   max-width: 520px;
 }
@@ -269,7 +273,6 @@ a:hover {
 .about-image {
   max-width: 320px;
   border-radius: 8px;
-  box-shadow: 8px 8px 0 #d8b384;
 }
 .about-subtitle {
   margin-top: 20px;
@@ -334,13 +337,10 @@ a:hover {
 }
 
 /* Projects Section */
-.section-title {
-  margin-bottom: 60px;
-}
 
 .project-card {
   border: none;
-  margin: 0 auto 100px auto 100px auto;
+  margin: 0 auto 80px auto;
   max-width: 700px;
 }
 .project-card:hover .project-image {
@@ -373,24 +373,24 @@ a:hover {
   text-transform: uppercase;
   opacity: 0.6;
   letter-spacing: 2px;
-  margin-top: -10px;
 }
 
 .project-info {
-  max-width: 100%;
-  margin-top: 12px;
+  max-width: 500px;
+  margin: 15px auto 0 auto;
 }
 .project-description {
   font-size: 15px;
   max-width: 500px;
   line-height: 1.6;
-  margin-top: -12px;
+  margin-top: 10px;
+  margin-bottom: 8px;
 }
 .project-button {
   display: inline-block;
   border-bottom: 1px solid var(--accent);
-  margin-bottom: 30px;
-  margin-top: 1px;
+  margin-top: 10px;
+  margin-bottom: 8px;
 }
 .project-button:hover {
   opacity: 0.6;
@@ -398,29 +398,35 @@ a:hover {
 .projects-section {
   margin: 0 auto;
   max-width: 1100px;
+  padding: 0 20px;
 }
 .col-lg-4:nth-child(2) {
   margin-top: 60px;
 }
+.projects-section .row {
+  justify-content: center;
+}
 /*Footer */
 footer {
-  margin-top: 60px;
+  margin-top: 80px;
+  padding: 30px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 footer .btn-branding {
   background: transparent;
   color: var(--accent) !important;
   border: 1px solid var(--accent);
-  padding: 10px 22px;
-  font-size: 14px;
+  padding: 8px 15px;
+  font-size: 13px;
 }
 footer .btn-branding:hover {
   background: var(--accent);
   color: var(--background-color) !important;
 }
 footer .social-links a {
-  margin: 0 15px;
+  font-size: 13px;
+  margin-top: 0 10px;
   padding: 10px;
-  font-size: 20px;
   border-radius: 50%;
   transition: all 150ms ease;
 }
@@ -429,8 +435,13 @@ footer .contact-box {
   margin-top: 40px;
 }
 footer .contact-box h3 {
-  font-size: 18px;
-  opacity: 0.8;
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-bottom: -5px;
+  font-weight: 100;
+}
+footer .footer-note {
+  font-size: 12px;
 }
 .contact-intro {
   opacity: 0.7;
@@ -440,12 +451,12 @@ footer .contact-box h3 {
 }
 .contact-hero {
   background-image: url("/images/ivan-gromov-Y3vPEuNlf7w-unsplash.jpg");
-  background-size: 110%;
+  background-size: cover;
   background-position: center;
   padding: 40px 20px;
   border-radius: 6px;
   margin: 40px auto;
-  max-width: 900px;
+  max-width: 700px;
 }
 
 .contact-content {
@@ -499,17 +510,11 @@ footer .contact-box h3 {
   border-bottom: 1px solid var(--accent);
 }
 .section-title {
-  font-family: "swomp", sans-serif;
+  font-family: "Swomp", sans-serif;
   color: #9b480c;
   font-size: 58px;
   text-align: center;
-  margin-bottom: 40px;
-}
-.footer-note {
-  font-size: 15px;
-}
-.footer-note a {
-  font-size: 15px;
+  margin-bottom: 60px;
 }
 
 /* Responsive Design */
@@ -517,17 +522,41 @@ footer .contact-box h3 {
   h1 {
     font-size: 40px;
   }
-
+  footer {
+    padding: 5px 0;
+  }
+  footer .contact-box {
+    margin-top: 10px;
+    margin-bottom: 1px;
+  }
+  footer .footer-note {
+    font-size: 13px;
+  }
+  .hero {
+    gap: 20px;
+  }
+  .hero-top {
+    margin-bottom: 8px;
+  }
+  .hero-name {
+    font-size: 44px;
+  }
   .hero-headline {
-    font-size: 36px;
+    font-size: 18px;
+    line-height: 1.4;
+    max-width: 300px;
   }
 
   .hero-section {
     gap: 20px;
   }
-
+  .hero-description {
+    margin: 15px 0;
+    font-size: 15px;
+  }
   .homepage-links {
-    gap: 20px;
+    gap: 10px;
+    margin-top: 10px;
   }
 
   .collage-item {
@@ -547,8 +576,11 @@ footer .contact-box h3 {
   }
 
   .collage {
-    position: static;
+    position: absolute;
     justify-content: center;
+    bottom: -20px;
+    left: 50%;
+    transform: translate(-50%);
   }
 
   .project-image {
